@@ -135,7 +135,7 @@ export const Banner = () => {
           </div>
         </article>
         <div className="ml-[11.5rem] mt-10">
-          <img src="../../public/img-2.webp" alt="" width={525} />
+          <img src="img-2.webp" alt="" width={525} />
         </div>
       </section>
     </main>
