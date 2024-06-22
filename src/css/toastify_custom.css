@@ -1,0 +1,17 @@
+/* toastify-custom.css */
+.custom-toast {
+    background-color: #333;
+    color: #000000;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  .custom-toast-success {
+    background-color: #ffffff;
+  }
+  
+  .custom-toast-error {
+    background-color: #000000;
+  }
+  
