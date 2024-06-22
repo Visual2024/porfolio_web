@@ -18,9 +18,9 @@ export const Banner = () => {
 
   return (
     <main className="">
-      <section className="pointer-events-none absolute h-screen object-cover h-full">
+      <section className="pointer-events-none absolute h-screen object-cover ">
         <img
-          src="public/background.webp"
+          src="background.webp"
           alt=""
           className="fixed h-screen w-screen object-cover opacity-20 blur-3xl "
         />
