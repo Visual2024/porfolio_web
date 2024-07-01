@@ -10,13 +10,13 @@ export function Navbar_Res(): JSX.Element {
   };
 
   return (
-    <header className="flex justify-end mt-5 relative pt-2 mr-8 scale-110">
+    <header className="flex justify-between mt-5 relative pt-4 px-8 scale-110">
       <IconButton
         edge="start"
         color="inherit"
         aria-label="menu"
         onClick={toggleDrawer}
-        className="absolute left-2 top-2 z-50 lg:hidden"
+        className="lg:hidden"
       >
         <MenuIcon />
       </IconButton>
@@ -28,7 +28,7 @@ export function Navbar_Res(): JSX.Element {
         >
           <List>
             {['Inicio', 'Experiencia', 'Proyecto', 'Blog'].map((text) => (
-              <ListItem button key={text}>
+              <ListItem button key={text} component="a" href={`#${text.toLowerCase()}`}>
                 <ListItemText primary={text} />
               </ListItem>
             ))}
@@ -36,28 +36,15 @@ export function Navbar_Res(): JSX.Element {
         </div>
       </Drawer>
 
-      <nav className="relative inset-0 hidden md:flex justify-center max-[400px]:bg-red-500"> 
-        <ul className="flex bg-transparent gap-3">
-          <li>
-            <a href="#inicio" className="flex items-center justify-center m-2 p-3 text-white rounded-md hover:bg-gray-900 duration-100">
-              Inici
-            </a>
-          </li>
-          <li>
-            <a href="#experiencia" className="flex items-center justify-center m-2 p-3 text-white rounded-md hover:bg-gray-900 duration-300">
-              Experiencia
-            </a>
-          </li>
-          <li>
-            <a href="#proyecto" className="flex items-center justify-center m-2 p-3 text-white rounded-md hover:bg-gray-900 duration-300">
-              Proyecto
-            </a>
-          </li>
-          <li>
-            <a href="#blog" className="flex items-center justify-center m-2 p-3 text-white rounded-md hover:bg-gray-900 duration-300">
-              Blog
-            </a>
-          </li>
+      <nav className="hidden lg:flex items-center">
+        <ul className="flex space-x-4">
+          {['Inicio', 'Experiencia', 'Proyecto', 'Blog'].map((text) => (
+            <li key={text}>
+              <a href={`#${text.toLowerCase()}`} className="text-white hover:bg-gray-600 px-3 py-2 rounded-md text-sm font-medium">
+                {text}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

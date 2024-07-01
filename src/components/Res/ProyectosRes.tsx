@@ -35,14 +35,14 @@ const projects: Project[] = [
   },
 ];
 
-const Projects: React.FC = () => {
+const ProjectoRes: React.FC = () => {
   return (
-    <div id="proyecto" className="p-6 min-h-screen ">
-      <a href="#proyecto"></a>
-      <h1 className="text-4xl font-bold text-center text-white mb-8 ">
+    <div id="proyecto" className="p-6 min-h-screen">
+      <a href="#proyecto" id="#proyecto"></a>
+      <h1 className="text-4xl font-bold text-center text-white mb-8">
         Proyectos Recientes
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg">
             <img
@@ -65,7 +65,7 @@ const Projects: React.FC = () => {
             </div>
             <div className="flex justify-between mt-10 ">
               <a
-                href={project.link} 
+                href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="  bg-blue-500  text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
@@ -88,4 +88,4 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects;
+export default ProjectoRes;

@@ -19,7 +19,8 @@ export const Banner = () => {
   };
 
   return (
-    <main className="p-4">
+    <main className="p-4 mt-3">
+      <a href="#inicio" id="inicio"></a>
       <section className="flex flex-col md:flex-row items-center">
         <article className="flex flex-col items-center mt-10 md:mt-0 md:items-start">
           <div className="flex flex-col mb-4 text-center md:text-left max-[400px]:flex max-[400px]:flex-col max-[400px]:items-center ">
@@ -29,14 +30,10 @@ export const Banner = () => {
             <h4 className="font-semibold text-lg md:text-xl">
               
               <a
-                href="#contacto"
+                
                 className="
-                max-[400px]:justify-center
-                max-[400px]:items-center 
-                max-[400px]:flex 
-                max-[400px]:scale-100
-                max-[400px]:mt-10
-                ml-3 hover:scale-125 hover:max-[400px]:scale-12
+                
+                mt-1  
                 flex items-center 
                 hover:bg-green-400/20 
                 content-center 
