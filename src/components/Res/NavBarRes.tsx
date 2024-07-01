@@ -27,7 +27,7 @@ export function Navbar_Res(): JSX.Element {
           onKeyDown={toggleDrawer}
         >
           <List>
-            {['Inicio', 'Experiencia', 'Proyecto', 'Blog'].map((text, index) => (
+            {['Inicio', 'Experiencia', 'Proyecto', 'Blog'].map((text) => (
               <ListItem button key={text}>
                 <ListItemText primary={text} />
               </ListItem>
