@@ -40,7 +40,7 @@ export function Navbar_Res(): JSX.Element {
         <ul className="flex bg-transparent gap-3">
           <li>
             <a href="#inicio" className="flex items-center justify-center m-2 p-3 text-white rounded-md hover:bg-gray-900 duration-100">
-              Inicio
+              Inici
             </a>
           </li>
           <li>
