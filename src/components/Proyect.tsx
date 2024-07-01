@@ -36,7 +36,7 @@ interface Project {
   
   const Projects: React.FC = () => {
     return (
-      <div className="p-6 min-h-screen">
+      <div id="proyecto" className="p-6 min-h-screen">
         <h1 className="text-4xl font-bold text-center text-white mb-8">Proyectos Recientes</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (

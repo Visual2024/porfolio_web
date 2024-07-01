@@ -1,14 +1,16 @@
+import { useMediaQuery } from "react-responsive";
 import { Banner } from "../components/Banner";
+import { BannerRes } from "../components/Res/BannerRes";
 import { Experiencia } from "../components/Expriencia";
-import Proyecto  from "../components/Proyect";
-
+import { ExperienciaRes } from "../components/Res/ExpienciaRes";
 
 export function Home(): JSX.Element {
-  return (
-    <div>
-      <Banner />
-      <Experiencia />
-      <Proyecto />
-    </div>
-  );
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" }); // Puedes ajustar el tamaño máximo según tus necesidades
+
+  return (<div>
+      {isMobile ? <BannerRes /> : <Banner />}
+      {isMobile ? <ExperienciaRes /> : <Experiencia />}
+      
+    
+  </div>)
 }
