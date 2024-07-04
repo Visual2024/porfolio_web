@@ -66,14 +66,14 @@ export const Banner = () => {
 
             <div className="flex flex-row mt-4 md:hidden">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/facundo-pettersson-ba219b22a/"
                 className="flex items-center space-x-2 bg-blue-900 transition-all hover:scale-105 hover:bg-white/10 cursor-pointer rounded-md border border-blue-900 text-sm px-2.5"
               >
                 LinkedIn
                 <Linkedin width={16} height={24} />
               </a>
               <a
-                href="#"
+                href="https://github.com/Visual2024"
                 className="flex items-center space-x-2 bg-blue-900 transition-all hover:scale-105 hover:bg-white/10 cursor-pointer rounded-md border border-blue-900 text-sm px-2.5"
               >
                 GitHub
@@ -90,14 +90,14 @@ export const Banner = () => {
 
             <div className="hidden md:flex mt-4 space-x-2">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/facundo-pettersson-ba219b22a/"
                 className="flex items-center space-x-2 bg-blue-900 transition-all hover:scale-105 hover:bg-white/10 cursor-pointer rounded-md border border-blue-900 text-sm px-2.5"
               >
                 LinkedIn
                 <Linkedin width={16} height={24} />
               </a>
               <a
-                href="#"
+                href="https://github.com/Visual2024"
                 className="flex items-center space-x-2 bg-blue-900 transition-all hover:scale-105 hover:bg-white/10 cursor-pointer rounded-md border border-blue-900 text-sm px-2.5"
               >
                 GitHub
