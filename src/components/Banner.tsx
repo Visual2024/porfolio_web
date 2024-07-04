@@ -28,11 +28,8 @@ export const Banner = () => {
               Facundo Pettersson
             </h1>
             <h4 className="font-semibold text-lg md:text-xl">
-              
               <a
-                
                 className="
-                
                 mt-1  
                 flex items-center 
                 hover:bg-green-400/20 
@@ -91,7 +88,6 @@ export const Banner = () => {
               </a>
             </div>
 
-            
             <div className="hidden md:flex mt-4 space-x-2">
               <a
                 href="#"

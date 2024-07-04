@@ -37,7 +37,7 @@ const projects: Project[] = [
 
 const ProjectoRes: React.FC = () => {
   return (
-    <div id="proyecto" className="p-6 min-h-screen">
+    <div id="proyecto" className="p-6">
       <a href="#proyecto" id="#proyecto"></a>
       <h1 className="text-4xl font-bold text-center text-white mb-8">
         Proyectos Recientes

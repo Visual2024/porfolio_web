@@ -10,7 +10,7 @@ export function Navbar_Res(): JSX.Element {
   };
 
   return (
-    <header className="flex justify-between mt-5 relative pt-4 px-8 scale-110">
+    <header className="flex mt-5 relative pt-4 px-8 ">
       <IconButton
         edge="start"
         color="inherit"
@@ -37,7 +37,7 @@ export function Navbar_Res(): JSX.Element {
       </Drawer>
 
       <nav className="hidden lg:flex items-center">
-        <ul className="flex space-x-4">
+        <ul className="flex">
           {['Inicio', 'Experiencia', 'Proyecto', 'Blog'].map((text) => (
             <li key={text}>
               <a href={`#${text.toLowerCase()}`} className="text-white hover:bg-gray-600 px-3 py-2 rounded-md text-sm font-medium">

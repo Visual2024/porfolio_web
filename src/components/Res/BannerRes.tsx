@@ -19,22 +19,22 @@ export const BannerRes = () => {
   };
 
   return (
-    <main className="p-4">
-      <section className="flex flex-col md:flex-row items-center">
-        <article className="flex flex-col items-center mt-10 ">
-          <div className=" md:text-left max-[400px]:flex max-[400px]:flex-col max-[400px]:items-center max-[500px]:flex max-[500px]:flex-col max-[500px]:justify-center">
+    <main className="">
+      <section className="flex flex-col items-center">
+        <article className="flex flex-col items-center mt-5 ">
+          <div className="items-center flex flex-col justify-center">
             <h1 className="
             text-4xl 
-            max-[400px]:text-[2.2rem] 
+            text-[2.2rem] 
             text-center 
             font-bold 
             mb-3">
               Facundo Pettersson
             </h1>
             <h4 className="
-            max-[400px]:flex 
+            flex 
            
-            max-[400px]:m-4 ">
+            m-4 ">
               <a
                 href="#contacto"
                 className="
@@ -61,12 +61,7 @@ export const BannerRes = () => {
           mt-4 
           items-center 
           justify-center 
-          max-[768px]:mr-[4rem]
-          max-[500px]:mr-[4rem]
-          max-[400px]:mr-[0rem]
-          space-y-2 
-          md:space-y-0 
-          md:space-x-2"
+          "
           >
             <span className="flex items-center justify-between rounded-md border border-yellow-500 bg-yellow-500/10 px-2.5 py-0.5 text-sm text-yellow-500">
               {email}

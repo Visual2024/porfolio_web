@@ -1,6 +1,6 @@
 export function Navbar(): JSX.Element {
   return (
-    <header className="flex gap-2 pt-2 justify-center w-ful mt-5 relative ">
+    <header className="flex gap-2 pt-2 justify-center w-full mt-5 relative ">
       <div className="w-96 h-14  bg-neutral-100 blur-2xl absolute"></div>
       <nav className="relative p-1 bg-gr inset-0 flex flex-row rounded-2xl w-96 justify-center">
         <ul className="flex gap-2 bg-transparent ">
@@ -8,7 +8,7 @@ export function Navbar(): JSX.Element {
             <a href="#inicio" className="flex m-2 text-white hover:bg-gray-600 items-center p-3 duration-300 rounded-md text-center">
               Inicio
             </a>
-          </li>
+          </li> 
           <li>
             <a href="#experiencia" className="flex m-2 text-white hover:bg-gray-600 items-center p-3 duration-300 rounded-md text-center">
               Experiencia
