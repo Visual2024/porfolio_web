@@ -19,7 +19,7 @@ export function Timeline_Example() {
           variant="body2"
           color="#fff"
         >
-          2024 Actualidad
+         Ago 2023 - 2024 Actualidad
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -33,36 +33,17 @@ export function Timeline_Example() {
             Desarrollador Front-end React JS
           </Typography>
           <Typography>
-            Me encargo de toda la parte visual y gestiono la mejor experiencia
-            para el usuario
+            Desarrollador Frontend con más de un año de experiencia en la creación y mantenimiento de interfaces web. He trabajo
+            en diversos proyectos colaborando con equipos multidisciplinarios. Soy una persona proactiva, en contaste aprendizaje
+            y siempre buscando desafíos para mejorar mis habilidades.
           </Typography>
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: "auto 0" }}
-          variant="body2"
-          color="#fff"
-        >
-          2023
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary">
-            <LaptopMacIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="span">
-            Code
-          </Typography>
-          <Typography>Me encargo de toda la parte visual y gestiono la mejor experiencia
-            para el usuario</Typography>
-        </TimelineContent>
-      </TimelineItem>
+
+
      
-     
+
+
     </Timeline>
   );
 }

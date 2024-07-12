@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         {projects.map((project, index) => (
-          <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div key={index} className="bg-gray-800 p-6 ml-4 rounded-lg shadow-lg">
             <img
               src={project.image}
               alt={`${project.title} preview`}

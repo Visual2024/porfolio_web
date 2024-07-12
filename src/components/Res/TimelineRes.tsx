@@ -1,42 +1,59 @@
-import { List, ListItem, ListItemText, Typography } from "@mui/material";
+import  { useState } from "react";
+import {
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+  Collapse,
+} from "@mui/material";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
 
 export function Timeline_Res(): JSX.Element {
+  const [open, setOpen] = useState<number | null>(null);
+
+  const handleClick = (index: number) => {
+    setOpen(open === index ? null : index);
+  };
+
+  const items = [
+    {
+      year: "2024",
+      description:
+        "Desarrollador Front-end React, encargado de la parte visual del sitio web, con mis compañeros de trabajo estamos desarrollando un Administrador de Recursos Humanos.",
+    },
+    {
+      year: "2023",
+      description:
+        "Pasantía no remunerada en un equipo FullStack trainee con el objetivo de poder realizar un E-Commerce desde cero. Yo fui parte del equipo de Frontend y estoy muy agradecido de poder haber compartido esta experiencia con un equipo tan maravilloso y unido. El entorno de desarrollo fue creado en Vite.JS y además de HTML, CSS, JS y React también utilizamos tecnologías como Tailwind, React Router, FlowBite, MUI, Swiper y varias más! Dentro del equipo nos organizamos con Trello, GitHub y GitHub Projects para poder llevar adelante el proyecto para ARWEB. Y tuve la suerte de poder compartir con grandes mentores de este ámbito.",
+    },
+  ];
+
   return (
     <List>
-      <ListItem>
-        <ListItemText
-          primary={
-            <Typography variant="h6" color="#fff">
-              2024
-            </Typography>
-          }
-          secondary={
-            <Typography variant="body2" color="#fff">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque nesciunt repudiandae debitis ullam error necessitatibus
-              unde quae dignissimos placeat obcaecati, eos impedit, minima enim
-              veniam reprehenderit beatae tenetur corrupti numquam!
-            </Typography>
-          }
-        />
-      </ListItem>
-      <ListItem>
-        <ListItemText
-          primary={
-            <Typography variant="h6" color="#fff">
-              2023
-            </Typography>
-          }
-          secondary={
-            <Typography variant="body2" color="#fff">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
-              minima sint necessitatibus debitis alias, maiores, sapiente
-              commodi nulla sunt dolorem corrupti ipsam dolorum nobis, mollitia
-              laboriosam consequuntur est accusamus non!
-            </Typography>
-          }
-        />
-      </ListItem>
+      {items.map((item, index) => (
+        <div key={index}>
+          <ListItem button onClick={() => handleClick(index)}>
+            <ListItemText
+              primary={
+                <Typography variant="h6" color="#fff">
+                  {item.year}
+                </Typography>
+              }
+            />
+            {open === index ? <ExpandLess /> : <ExpandMore />}
+          </ListItem>
+          <Collapse in={open === index} timeout="auto" unmountOnExit>
+            <ListItemText
+              secondary={
+                <Typography variant="body2" color="#fff">
+                  {item.description}
+                </Typography>
+              }
+            />
+          </Collapse>
+        </div>
+      ))}
     </List>
   );
 }

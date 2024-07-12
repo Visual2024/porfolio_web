@@ -6,8 +6,10 @@ import { ExperienciaRes } from "../components/Res/ExpienciaRes";
 import  ProjectoRes  from "../components/Res/ProyectosRes";
 import Projects from "../components/Proyect";
 
+
+
 export function Home(): JSX.Element {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" }); // Puedes ajustar el tamaño máximo según tus necesidades
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" }); 
 
   return (<div>
       {isMobile ? <BannerRes /> : <Banner />}

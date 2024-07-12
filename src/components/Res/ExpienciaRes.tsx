@@ -2,8 +2,11 @@ import { Timeline_Res } from "./TimelineRes";
 
 export function ExperienciaRes(): JSX.Element {
   return (
-    <div className="flex justify-start w-[80%] scale-110 mt-5 ml-10 text-white">
+    <div className="mt-5 text-white">
       <a href="#experiencia"></a>
+
+      <h1 className="font-bold text-center text-2xl ">Experiencia</h1>
+
       <Timeline_Res />
     </div>
   );

@@ -27,7 +27,7 @@ export function Navbar_Res(): JSX.Element {
           onKeyDown={toggleDrawer}
         >
           <List>
-            {['Inicio', 'Experiencia', 'Proyecto', 'Blog'].map((text) => (
+            {['Inicio', 'Sobre mi','Experiencia', 'Proyecto'].map((text) => (
               <ListItem button key={text} component="a" href={`#${text.toLowerCase()}`}>
                 <ListItemText primary={text} />
               </ListItem>
@@ -38,7 +38,7 @@ export function Navbar_Res(): JSX.Element {
 
       <nav className="hidden lg:flex items-center">
         <ul className="flex">
-          {['Inicio', 'Experiencia', 'Proyecto', 'Blog'].map((text) => (
+          {['Inicio', 'Sobre mi','Experiencia', 'Proyecto'].map((text) => (
             <li key={text}>
               <a href={`#${text.toLowerCase()}`} className="text-white hover:bg-gray-600 px-3 py-2 rounded-md text-sm font-medium">
                 {text}
