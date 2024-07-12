@@ -68,6 +68,7 @@ export const Banner = () => {
             <div className=" md:flex mt-4 space-x-2">
               <a
                 href="https://www.linkedin.com/in/facundo-pettersson-ba219b22a/"
+                target="_blank"
                 className="flex items-center space-x-2 bg-blue-900 transition-all hover:scale-105 hover:bg-white/10 cursor-pointer rounded-md border border-blue-900 text-sm px-2.5"
               >
                 LinkedIn
@@ -75,6 +76,7 @@ export const Banner = () => {
               </a>
               <a
                 href="https://github.com/Visual2024"
+                target="_blank"
                 className="flex items-center space-x-2 bg-blue-900 transition-all hover:scale-105 hover:bg-white/10 cursor-pointer rounded-md border border-blue-900 text-sm px-2.5"
               >
                 GitHub
@@ -82,6 +84,7 @@ export const Banner = () => {
               </a>
               <a
                 href="#"
+                target="_blank"
                 className="flex items-center space-x-2 bg-blue-900 transition-all hover:scale-105 hover:bg-white/10 cursor-pointer rounded-md border border-blue-900 text-sm px-2.5"
               >
                 Discord
